@@ -1,17 +1,51 @@
 {
-  "extends": ["next/core-web-vitals", "prettier"],
-   "rules": {
-        // enable additional rules
-        "indent": ["error", 4],
-        "linebreak-style": ["error", "unix"],
-        "quotes": ["error", "single"],
-        "semi": ["error", "always"],
-
-        // override configuration set by extending "eslint:recommended"
-        "no-empty": "warn",
-        "no-cond-assign": ["error", "always"],
-
-        // disable rules from base configurations
-         "for-direction": "off",
+  "env": {
+    "browser": true,
+    "es2023": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "next",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/typescript"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-restricted-imports": 0,
+    "import/extensions": 0,
+    "react/function-component-definition": [
+      0,
+      {
+        "namedComponents": ["arrow-function"],
+        "unnamedComponents": ["arrow-function"]
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "import/no-cycle": 0,
+    "react/jsx-props-no-spreading": 0,
+    "no-underscore-dangle": 0
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".ts", ".tsx", ".js", ".jsx"],
+        "moduleDirectory": ["src", "node_modules"]
+      },
+      "typescript": {}
     }
+  }
 }
