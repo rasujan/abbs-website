@@ -27,9 +27,9 @@ const Brief = () => {
   ];
 
   return (
-    <Container>
+    <Container py="md">
       <Box>
-        <Text fz="xl3" lh="3rem" tt="capitalize" lts={'rem(6)'} mb="xl">
+        <Text fz="xl3" lh="3rem" tt="capitalize" lts={'rem(6)'} my="xl">
           Maximizing your unique benefits with our solutions: server, chip, or
           cloud — we are here to make your software sharp, seamless, bright, on
           time, and on budget.

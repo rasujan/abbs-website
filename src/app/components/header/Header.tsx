@@ -9,11 +9,13 @@ import {
   Burger,
   Drawer,
   ScrollArea,
+  Image,
   rem,
   Text
 } from '@mantine/core';
-
+import NextImage from 'next/image';
 import { useDisclosure } from '@mantine/hooks';
+import abbs from '@/../public/abbs.jpeg';
 
 import classes from './Header.module.css';
 import Link from 'next/link';
@@ -27,8 +29,7 @@ const Header = () => {
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <Group>
-            {/* // Todo : replace it with logo */}
-            <Text fz="lg"> ABBS </Text>
+            <Image component={NextImage} src={abbs} alt="ABBS" width="100" />
           </Group>
           {/* // Keep next side of header in another Group */}
           <Group h="100%" gap="sm" visibleFrom="sm">
