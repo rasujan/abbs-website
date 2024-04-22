@@ -1,6 +1,12 @@
 import React from 'react';
 // This is the home page
-import { Landing, Brief, Service } from './components';
+import {
+  Landing,
+  Brief,
+  Service,
+  SuccessStories,
+  Expertise
+} from './components';
 
 export default function Home() {
   return (
@@ -10,6 +16,10 @@ export default function Home() {
       <Brief />
 
       <Service />
+
+      <SuccessStories />
+
+      <Expertise />
     </main>
   );
 }

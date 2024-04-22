@@ -33,8 +33,7 @@ const ServiceSection = () => {
   return (
     <>
       <Container>
-        <Text fz="xl3" lh="xl3" my="md">
-          {' '}
+        <Text fz="xl3" lh="xl3" my="md" ta="center">
           Our Services
         </Text>
 
