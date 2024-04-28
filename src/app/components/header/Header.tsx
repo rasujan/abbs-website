@@ -32,15 +32,7 @@ const Header = () => {
             <Image component={NextImage} src={abbs} alt="ABBS" width="100" />
           </Group>
           {/* // Keep next side of header in another Group */}
-          <Group h="100%" gap="sm" visibleFrom="sm">
-            <Link href="#" className={classes.link}>
-              <Text>Home</Text>
-            </Link>
-
-            <Link href="#" className={classes.link}>
-              <Text> Learn</Text>
-            </Link>
-          </Group>
+          <Group h="100%" gap="sm" visibleFrom="sm"></Group>
 
           <Burger
             opened={drawerOpened}

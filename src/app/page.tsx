@@ -5,7 +5,8 @@ import {
   Brief,
   Service,
   SuccessStories,
-  Expertise
+  Expertise,
+  Testimonials
 } from './components';
 
 export default function Home() {
@@ -20,6 +21,8 @@ export default function Home() {
       <SuccessStories />
 
       <Expertise />
+
+      <Testimonials />
     </main>
   );
 }
