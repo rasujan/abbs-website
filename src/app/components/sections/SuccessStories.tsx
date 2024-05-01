@@ -3,8 +3,8 @@ import React from 'react';
 
 const SuccessStoriesSection = () => {
   return (
-    <Container>
-      <Text fz="xl3" lh="xl3" my="lg" ta="center">
+    <Container id="success">
+      <Text fz="d2" lh="d3" mb="lg" mt="xl3" tt="uppercase">
         Success Stories
       </Text>
 
