@@ -32,7 +32,27 @@ const Header = () => {
             <Image component={NextImage} src={abbs} alt="ABBS" width="100" />
           </Group>
           {/* // Keep next side of header in another Group */}
-          <Group h="100%" gap="sm" visibleFrom="sm"></Group>
+          <Group h="100%" gap="sm" visibleFrom="sm">
+            <Link href="#home" className={classes.link}>
+              <Text tt="uppercase">Home</Text>
+            </Link>
+
+            <Link href="#services" className={classes.link}>
+              <Text tt="uppercase">Services</Text>
+            </Link>
+
+            <Link href="#expertise" className={classes.link}>
+              <Text tt="uppercase"> Expertise</Text>
+            </Link>
+
+            <Link href="#success" className={classes.link}>
+              <Text tt="uppercase"> Success</Text>
+            </Link>
+
+            <Link href="#testimonials" className={classes.link}>
+              <Text tt="uppercase"> Testimonials</Text>
+            </Link>
+          </Group>
 
           <Burger
             opened={drawerOpened}
@@ -54,11 +74,23 @@ const Header = () => {
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
           <Link href="/" className={classes.link}>
-            Home
+            <Text tt="uppercase">Home</Text>
           </Link>
 
-          <Link href="/" className={classes.link}>
-            <Text> Learn</Text>
+          <Link href="#services" className={classes.link}>
+            <Text tt="uppercase">Services</Text>
+          </Link>
+
+          <Link href="#expertise" className={classes.link}>
+            <Text tt="uppercase"> Expertise</Text>
+          </Link>
+
+          <Link href="#success" className={classes.link}>
+            <Text tt="uppercase"> Success</Text>
+          </Link>
+
+          <Link href="#testimonials" className={classes.link}>
+            <Text tt="uppercase"> Testimonials</Text>
           </Link>
 
           <Divider my="sm" />

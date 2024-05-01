@@ -18,9 +18,9 @@ export default function Home() {
 
       <Service />
 
-      <SuccessStories />
-
       <Expertise />
+
+      <SuccessStories />
 
       <Testimonials />
     </main>

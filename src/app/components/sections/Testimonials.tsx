@@ -17,7 +17,7 @@ const Testimonials = () => {
   ];
   return (
     <Container>
-      <Text fz="xl3" lh="xl3" my="lg" ta="center">
+      <Text fz="d2" lh="d3" my="lg" tt="uppercase">
         Testimonial
       </Text>
 
