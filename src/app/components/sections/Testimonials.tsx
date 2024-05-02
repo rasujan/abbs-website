@@ -16,25 +16,34 @@ const Testimonials = () => {
     }
   ];
   return (
-    <Container>
-      <Text fz="d2" lh="d3" my="lg" tt="uppercase">
-        Testimonial
-      </Text>
+    <>
+      <Container size={'xl'} id="success" pt="xl3">
+        <Text
+          fz={{ base: 'xl3', md: 'd2' }}
+          lh={{ base: 'xl3', md: 'd3' }}
+          my="lg"
+          tt="uppercase"
+        >
+          Testimonial
+        </Text>
+      </Container>
 
-      <SimpleGrid cols={{ base: 1 }} spacing={'md'}>
-        {testimonialList.map((ex) => (
-          <Card px="0" key={ex.org}>
-            <Text fz="xl" fw="bold" my="md">
-              {ex.org}
-            </Text>
+      <Container>
+        <SimpleGrid cols={{ base: 1 }} spacing={'md'}>
+          {testimonialList.map((ex) => (
+            <Card px="0" key={ex.org}>
+              <Text fz="xl" fw="bold" my="md">
+                {ex.org}
+              </Text>
 
-            <p>
-              {ex.description} - <b>{ex.name}</b>
-            </p>
-          </Card>
-        ))}
-      </SimpleGrid>
-    </Container>
+              <p>
+                {ex.description} - <b>{ex.name}</b>
+              </p>
+            </Card>
+          ))}
+        </SimpleGrid>
+      </Container>
+    </>
   );
 };
 

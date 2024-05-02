@@ -15,3 +15,22 @@
   background-position: left;
   background-repeat: no-repeat;
 }
+
+.letter-spacing {
+  &-md {
+    letter-spacing: 2px;
+  }
+
+  &-lg {
+    letter-spacing: 4px;
+  }
+
+  &-xl {
+    letter-spacing: 6px;
+  }
+}
+
+.focus {
+  background-color: black;
+  color: white;
+}

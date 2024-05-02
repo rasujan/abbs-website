@@ -36,15 +36,17 @@ const Brief = () => {
   ];
 
   return (
-    <Box h="98vh" className="brief-bg">
+    <Box mih="98vh" className="brief-bg">
+      <Container size="xl" pt="6rem">
+        <Text fz="xl3" lh="3rem" tt="uppercase" lts={'4px'} my="xl" fw="bolder">
+          <span className="focus"> Maximizing</span> your unique benefits with
+          our solutions: server, chip, or cloud — we are here to make your
+          software sharp, seamless, bright, on time, and on budget.
+        </Text>
+      </Container>
+
       <Container py="md">
         <Box>
-          <Text fz="xl3" lh="3rem" tt="capitalize" lts={'rem(6)'} my="xl">
-            Maximizing your unique benefits with our solutions: server, chip, or
-            cloud — we are here to make your software sharp, seamless, bright,
-            on time, and on budget.
-          </Text>
-
           <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={'md'}>
             {list.map((item) => (
               <Box key={item.title} my="md">

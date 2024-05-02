@@ -55,11 +55,19 @@ const ExpertiseSection = () => {
 
   return (
     <Box className="expertise-bg">
-      <Container id="expertise">
-        <Text fz="d2" lh="d3" mb="lg" mt="xl3" tt="uppercase">
+      <Container id="expertise" size="xl">
+        <Text
+          fz={{ base: 'xl3', md: 'd2' }}
+          lh={{ base: 'xl3', md: 'd3' }}
+          mb="lg"
+          pt="6rem"
+          tt="uppercase"
+        >
           Expertise
         </Text>
+      </Container>
 
+      <Container>
         <SimpleGrid cols={{ base: 2 }} spacing={'md'}>
           {expertiseList.map((ex) => (
             <Card key={ex.title} shadow="#ccc 5px 5px 10px">

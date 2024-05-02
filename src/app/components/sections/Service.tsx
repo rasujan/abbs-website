@@ -137,8 +137,13 @@ const ServiceSection = () => {
 
   return (
     <>
-      <Container id="services">
-        <Text fz="d2" lh="d3" my="lg" tt="uppercase">
+      <Container size="xl" id="services">
+        <Text
+          fz={{ base: 'xl3', md: 'd2' }}
+          lh={{ base: 'xl3', md: 'd3' }}
+          my="lg"
+          tt="uppercase"
+        >
           Our Services
         </Text>
 
@@ -154,7 +159,9 @@ const ServiceSection = () => {
           support as you get started and beyond, and a quick setup for smooth
           operations.
         </Text>
+      </Container>
 
+      <Container pt="6rem">
         <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={'md'}>
           {list.map((item) => (
             <Card key={item.title} my="md" shadow="#ccc 5px 5px 10px">
