@@ -1,24 +1,79 @@
 import React from 'react';
-import { Box, Center, Title, Text, Container } from '@mantine/core';
+
+import NextImage from 'next/image';
+import {
+  Box,
+  Center,
+  Title,
+  Text,
+  Container,
+  Image,
+  Flex
+} from '@mantine/core';
+
+import R1 from '@/../public/r1.svg';
+import R2 from '@/../public/r2.svg';
 
 const Landing = () => (
   <>
-    <Box h="98vh" className="landing-bg" id="home">
-      <Center h="56vh">
+    <Box mih="103vh" className="landing-bg" id="home">
+      <Center h="70vh">
         <Box ta="center" mt="8rem">
-          <Box>
-            <Title fz="6rem" lh="10rem" tt="uppercase">
+          <Title
+            fz={{ base: '3rem', md: '4rem', lg: '6rem' }}
+            fw="normal"
+            lh={{ base: '4rem', md: '5rem', lg: '7rem' }}
+            tt="uppercase"
+            className="letter-spacing-xl"
+          >
+            <Flex align={'baseline'}>
               {' '}
-              Creating Software{' '}
-            </Title>
-          </Box>
+              Creating{' '}
+              <Image
+                w="160px"
+                mx="lg"
+                visibleFrom="md"
+                component={NextImage}
+                src={R1}
+                alt="R1"
+                mt="2rem"
+              />
+              Software{' '}
+            </Flex>
+          </Title>
 
-          <Box>
-            <Title fz="6rem" lh="10rem" tt="uppercase">
+          <Center hiddenFrom="md">
+            <Image
+              w="160px"
+              mx="lg"
+              component={NextImage}
+              src={R1}
+              alt="R1"
+              mt="2rem"
+            />
+          </Center>
+
+          <Title
+            fz={{ base: '3rem', md: '4rem', lg: '6rem' }}
+            fw="normal"
+            lh={{ base: '4rem', md: '5rem', lg: '7rem' }}
+            tt="uppercase"
+            className="letter-spacing-xl"
+          >
+            <Flex align={'baseline'}>
               {' '}
-              Success Together{' '}
-            </Title>
-          </Box>
+              Success Together{'  '}
+              <Image
+                w="160px"
+                component={NextImage}
+                src={R2}
+                mx="lg"
+                visibleFrom="lg"
+                mt="2rem"
+                alt="R2"
+              />
+            </Flex>
+          </Title>
         </Box>
       </Center>
 

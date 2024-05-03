@@ -6,7 +6,8 @@ import {
   Service,
   SuccessStories,
   Expertise,
-  Testimonials
+  Testimonials,
+  ParallaxEffect
 } from './components';
 
 export default function Home() {
@@ -17,6 +18,8 @@ export default function Home() {
       <Brief />
 
       <Service />
+
+      <ParallaxEffect />
 
       <Expertise />
 
