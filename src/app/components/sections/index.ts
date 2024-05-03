@@ -5,6 +5,7 @@ import SuccessStories from './SuccessStories';
 import Expertise from './Experties';
 import Testimonials from './Testimonials';
 import ParallaxEffect from './Parallax';
+import Industries from './Industries';
 
 export {
   Landing,
@@ -13,5 +14,6 @@ export {
   SuccessStories,
   Expertise,
   Testimonials,
-  ParallaxEffect
+  ParallaxEffect,
+  Industries
 };

@@ -16,6 +16,12 @@
   background-repeat: no-repeat;
 }
 
+.industries-bg {
+  background-image: url('https://ld-wp73.template-help.com/wordpress/prod_33653/v1/wp-content/uploads/2023/09/img_bg-min.png');
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
 .letter-spacing {
   &-md {
     letter-spacing: 2px;
@@ -33,4 +39,12 @@
 .focus {
   background-color: black;
   color: white;
+}
+
+.h-focus {
+  &:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
 }
