@@ -5,7 +5,7 @@ import React from 'react';
 import '@mantine/core/styles.css';
 
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
-import { Header } from './components';
+import { Header, Footer } from './components';
 
 import '@/scss/index.scss';
 
@@ -30,6 +30,7 @@ export default function RootLayout({
         <MantineProvider theme={theme}>
           <Header />
           {children}
+          <Footer />
         </MantineProvider>
       </body>
     </html>

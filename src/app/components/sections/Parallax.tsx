@@ -23,7 +23,7 @@ const ParallaxComponent = () => {
         backgroundImage:
           'url(https://ld-wp73.template-help.com/wordpress/prod_33653/v1/wp-content/uploads/2023/09/home_bg3-min.png)',
         backgroundSize: 'cover',
-        backgroundPositionY: `${scrollPosition + 120}px`, // Adjust the multiplier to change the parallax effect speed
+        backgroundPositionY: `${scrollPosition + 100}px`, // Adjust the multiplier to change the parallax effect speed
         minHeight: '100vh' // Ensure the Paper takes up the full viewport height
       }}
     ></Box>

@@ -18,7 +18,7 @@ import NextImage from 'next/image';
 import { useDisclosure } from '@mantine/hooks';
 import abbs from '@/../public/abbs.jpeg';
 
-import classes from './Header.module.css';
+import classes from './Header.module.scss';
 import Link from 'next/link';
 
 const Header = () => {

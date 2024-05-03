@@ -22,7 +22,7 @@ const SuccessStoriesSection = () => {
             <Text fz="xl" fw="bold" my="md">
               Drow
             </Text>
-            <Text> Task Management System for contruction.</Text>
+            <Text> Task Management System for construction.</Text>
           </Card>
 
           <Card px="0">
