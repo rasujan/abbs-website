@@ -78,7 +78,7 @@ const ExpertiseSection = () => {
       </ScrollAnimation>
 
       <Container>
-        <SimpleGrid cols={{ base: 2 }} spacing={'md'}>
+        <SimpleGrid cols={{ base: 1, md: 2 }} spacing={'md'}>
           {expertiseList.map((ex) => (
             <ScrollAnimation
               key={ex.title}

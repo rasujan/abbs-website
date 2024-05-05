@@ -14,7 +14,7 @@ const Footer = () => {
     <Box className={classes.footer} py="xl4" id="contact">
       <Container size={'xl'}>
         <Grid>
-          <Grid.Col span={4}>
+          <Grid.Col span={{ base: 12, md: 4 }} bg="rgba(49, 49, 49, 0.3)">
             <Image
               h={100}
               w="auto"
@@ -29,9 +29,9 @@ const Footer = () => {
             </Text>
           </Grid.Col>
 
-          <Grid.Col span={2}></Grid.Col>
+          <Grid.Col span={{ base: 12, md: 2 }}></Grid.Col>
 
-          <Grid.Col span={6}>
+          <Grid.Col span={{ base: 12, md: 6 }} bg="rgba(49, 49, 49, 0.3)">
             <Text fz="xl" fw="bold" mb="lg">
               Contact Info
             </Text>
