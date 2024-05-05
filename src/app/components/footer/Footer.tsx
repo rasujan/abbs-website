@@ -11,7 +11,7 @@ import abbs from '@/../public/abbs.jpeg';
 
 const Footer = () => {
   return (
-    <Box className={classes.footer} py="xl">
+    <Box className={classes.footer} py="xl4" id="contact">
       <Container size={'xl'}>
         <Grid>
           <Grid.Col span={4}>

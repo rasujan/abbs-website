@@ -4,10 +4,11 @@ import {
   Landing,
   Brief,
   Service,
-  SuccessStories,
+  Companies,
   Expertise,
   Industries,
-  ParallaxEffect
+  ParallaxEffect,
+  Stories
 } from './components';
 
 export default function Home() {
@@ -21,11 +22,13 @@ export default function Home() {
 
       <ParallaxEffect />
 
+      <Stories />
+
       <Expertise />
 
       <Industries />
 
-      <SuccessStories />
+      <Companies />
     </main>
   );
 }

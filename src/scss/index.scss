@@ -22,6 +22,12 @@
   background-repeat: no-repeat;
 }
 
+.drawer-bg {
+  background-image: url('https://ld-wp73.template-help.com/wordpress/prod_33653/v1/wp-content/uploads/2023/09/menu-min.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
 .letter-spacing {
   &-md {
     letter-spacing: 2px;
@@ -39,6 +45,13 @@
 .focus {
   background-color: black;
   color: white;
+
+  &.rounded {
+    text-align: center;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    width: max-content;
+  }
 }
 
 .h-focus {

@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 import { Box, Container, Text, SimpleGrid } from '@mantine/core';
@@ -6,6 +8,7 @@ import {
   IconCircle2Filled,
   IconCircle3Filled
 } from '@tabler/icons-react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 type listT = {
   title: string;
@@ -37,28 +40,50 @@ const Brief = () => {
 
   return (
     <Box mih="98vh" className="brief-bg">
-      <Container size="xl" pt="6rem">
-        <Text fz="xl3" lh="3rem" tt="uppercase" lts={'4px'} my="xl" fw="bolder">
-          <span className="focus"> Maximizing</span> your unique benefits with
-          our solutions: server, chip, or cloud — we are here to make your
-          software sharp, seamless, bright, on time, and on budget.
-        </Text>
-      </Container>
+      <ScrollAnimation
+        animateIn="rotateInDownLeft"
+        animateOut="fadeOut"
+        animatePreScroll
+        animateOnce={true}
+      >
+        <Container size="xl" pt="6rem">
+          <Text
+            fz="xl3"
+            lh="3rem"
+            tt="uppercase"
+            lts={'4px'}
+            my="xl"
+            fw="bolder"
+          >
+            <span className="focus"> Maximizing</span> your unique benefits with
+            our solutions: server, chip, or cloud — we are here to make your
+            software sharp, seamless, bright, on time, and on budget.
+          </Text>
+        </Container>
+      </ScrollAnimation>
 
       <Container py="md">
         <Box>
           <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={'md'}>
             {list.map((item) => (
-              <Box key={item.title} my="md">
-                {item.icon}
+              <ScrollAnimation
+                key={item.title}
+                animateIn="rotateInUpRight"
+                animateOut="fadeOut"
+                animatePreScroll
+                animateOnce={true}
+              >
+                <Box my="md">
+                  {item.icon}
 
-                <Text fw="bold" fz="xl" my="lg" tt="uppercase">
-                  {' '}
-                  {item.title}{' '}
-                </Text>
+                  <Text fw="bold" fz="xl" my="lg" tt="uppercase">
+                    {' '}
+                    {item.title}{' '}
+                  </Text>
 
-                <Text> {item.description} </Text>
-              </Box>
+                  <Text> {item.description} </Text>
+                </Box>
+              </ScrollAnimation>
             ))}
           </SimpleGrid>
         </Box>

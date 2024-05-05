@@ -25,6 +25,31 @@ const Header = () => {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
 
+  const list = [
+    {
+      title: 'Home',
+      link: '/'
+    },
+    {
+      title: 'Services',
+      link: '#services'
+    },
+    {
+      title: 'Success Stories',
+      link: '#stories'
+    },
+    {
+      title: 'Expertise',
+      link: '#expertise'
+    },
+    { title: 'Industries', link: '#industries' },
+    { title: 'Partners', link: '#partners' },
+    {
+      title: 'Contact',
+      link: '#contact'
+    }
+  ];
+
   return (
     <Box>
       <header className={classes.header}>
@@ -49,31 +74,29 @@ const Header = () => {
         opened={drawerOpened}
         onClose={closeDrawer}
         padding="md"
-        title="ABBS"
+        size={'50vw'}
         zIndex={1000000}
         position="right"
       >
-        <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
+        <ScrollArea
+          h={`calc(100vh - ${rem(60)})`}
+          mx="-md"
+          className="drawer-bg"
+        >
           <Divider my="sm" />
-          <Link href="/" className={classes.link}>
-            <Text tt="uppercase">Home</Text>
-          </Link>
 
-          <Link href="#services" className={classes.link}>
-            <Text tt="uppercase">Services</Text>
-          </Link>
-
-          <Link href="#expertise" className={classes.link}>
-            <Text tt="uppercase"> Expertise</Text>
-          </Link>
-
-          <Link href="#success" className={classes.link}>
-            <Text tt="uppercase"> Success</Text>
-          </Link>
-
-          <Link href="#testimonials" className={classes.link}>
-            <Text tt="uppercase"> Testimonials</Text>
-          </Link>
+          {list.map((item) => (
+            <Link
+              key="item.tile"
+              href={item.link}
+              onClick={closeDrawer}
+              className={classes.link}
+            >
+              <Text tt="uppercase" fz="xl3" p="lg" className="link-f">
+                {item.title}
+              </Text>
+            </Link>
+          ))}
 
           <Divider my="sm" />
         </ScrollArea>

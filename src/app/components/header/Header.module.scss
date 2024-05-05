@@ -3,6 +3,7 @@
   width: 100%;
   padding: var(--mantine-spacing-md);
   background-color: #f0f0f055;
+  z-index: 9999999;
 }
 
 .inner {
@@ -23,6 +24,12 @@
 .link {
   text-decoration: none;
   color: var(--mantine-color-black);
+
+  p {
+    &:hover {
+      color: rgb(176, 176, 176) !important;
+    }
+  }
 }
 
 .mainLinks {
@@ -59,4 +66,10 @@
     color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
     text-decoration: none;
   }
+}
+
+.drawer-bg {
+  background-image: url('https://ld-wp73.template-help.com/wordpress/prod_33653/v1/wp-content/uploads/2023/09/menu-min.png');
+  background-position: right;
+  background-repeat: no-repeat;
 }
