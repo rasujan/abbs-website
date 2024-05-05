@@ -1,19 +1,21 @@
 import Landing from './Landing';
 import Brief from './Brief';
 import Service from './Service';
-import SuccessStories from './SuccessStories';
+import Companies from './Companies';
 import Expertise from './Experties';
 import Testimonials from './Testimonials';
 import ParallaxEffect from './Parallax';
 import Industries from './Industries';
+import Stories from './Stories';
 
 export {
   Landing,
   Brief,
   Service,
-  SuccessStories,
+  Companies,
   Expertise,
   Testimonials,
   ParallaxEffect,
-  Industries
+  Industries,
+  Stories
 };

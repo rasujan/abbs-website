@@ -36,7 +36,7 @@ const Industries = () => {
 
   return (
     <Box className="industries-bg">
-      <Container id="expertise" size="xl">
+      <Container id="industries" size="xl">
         <Text
           fz={{ base: 'xl3', md: 'd2' }}
           lh={{ base: 'xl3', md: 'd3' }}
