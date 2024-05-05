@@ -1,11 +1,14 @@
 'use client';
 
-import { Container, Text, Image, SimpleGrid } from '@mantine/core';
+import { Container, Text, Image, SimpleGrid, Flex } from '@mantine/core';
 import React from 'react';
 import NextImage from 'next/image';
 
 import drow from '@/../public/drow.jpeg';
 import pem from '@/../public/pem.jpeg';
+import arkbo from '@/../public/arkbo.jpeg';
+import seshra from '@/../public/seshra.jpeg';
+
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const SuccessStoriesSection = () => {
@@ -25,19 +28,19 @@ const SuccessStoriesSection = () => {
             mt="xl3"
             tt="uppercase"
           >
-            COMPANIES WE'RE PROUD TO HAVE WORKED WITH
+            In Collaboration
           </Text>
         </Container>
       </ScrollAnimation>
 
-      <Container py="xl3">
+      <Container py="xl3" size={'xl'}>
         <ScrollAnimation
           animateIn="bounceIn"
           animateOut="fadeOut"
           animatePreScroll
           animateOnce={true}
         >
-          <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={'md'} py="xl3">
+          <SimpleGrid cols={{ base: 1, md: 2 }} spacing={'md'} py="xl3">
             <Image
               component={NextImage}
               h={160}
@@ -45,6 +48,7 @@ const SuccessStoriesSection = () => {
               fit="contain"
               src={drow}
               alt="drow"
+              pb="xl"
             />
 
             <Image
@@ -54,6 +58,25 @@ const SuccessStoriesSection = () => {
               fit="contain"
               src={pem}
               alt="pem"
+              pb="xl"
+            />
+
+            <Image
+              component={NextImage}
+              h={100}
+              w="auto"
+              fit="contain"
+              src={arkbo}
+              alt="arkbo"
+            />
+
+            <Image
+              component={NextImage}
+              h={160}
+              w="auto"
+              fit="contain"
+              src={seshra}
+              alt="seshra"
             />
           </SimpleGrid>
         </ScrollAnimation>
