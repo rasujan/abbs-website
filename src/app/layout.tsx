@@ -10,6 +10,7 @@ import { Header, Footer } from './components';
 import '@/scss/index.scss';
 
 import theme from '@/constant/theme';
+import 'animate.css/animate.compat.css';
 
 export const metadata = {
   title: 'ABBS',
@@ -25,6 +26,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <ColorSchemeScript />
+
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+        />
       </head>
       <body>
         <MantineProvider theme={theme}>

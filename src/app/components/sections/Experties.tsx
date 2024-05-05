@@ -1,3 +1,5 @@
+'use client';
+
 import { Container, Text, Card, SimpleGrid, Box } from '@mantine/core';
 import React, { JSX } from 'react';
 import {
@@ -8,6 +10,7 @@ import {
   IconLayersIntersect,
   IconTools
 } from '@tabler/icons-react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const ExpertiseSection = () => {
   const expertiseList: {
@@ -55,28 +58,43 @@ const ExpertiseSection = () => {
 
   return (
     <Box className="expertise-bg">
-      <Container id="expertise" size="xl">
-        <Text
-          fz={{ base: 'xl3', md: 'd2' }}
-          lh={{ base: 'xl3', md: 'd3' }}
-          mb="lg"
-          pt="6rem"
-          tt="uppercase"
-        >
-          Expertise
-        </Text>
-      </Container>
+      <ScrollAnimation
+        animateIn="rotateInDownLeft"
+        animateOut="fadeOut"
+        animatePreScroll
+        animateOnce={true}
+      >
+        <Container id="expertise" size="xl">
+          <Text
+            fz={{ base: 'xl3', md: 'd2' }}
+            lh={{ base: 'xl3', md: 'd3' }}
+            mb="lg"
+            pt="6rem"
+            tt="uppercase"
+          >
+            Expertise
+          </Text>
+        </Container>
+      </ScrollAnimation>
 
       <Container>
         <SimpleGrid cols={{ base: 2 }} spacing={'md'}>
           {expertiseList.map((ex) => (
-            <Card key={ex.title} shadow="#ccc 5px 5px 10px">
-              {ex.icon}
-              <Text fz="xl" fw="bold" my="md">
-                {ex.title}
-              </Text>
-              <Text> {ex.description}</Text>
-            </Card>
+            <ScrollAnimation
+              key={ex.title}
+              animateIn="rotateInUpRight"
+              animateOut="fadeOut"
+              animatePreScroll
+              animateOnce={true}
+            >
+              <Card key={ex.title} shadow="#ccc 5px 5px 10px">
+                {ex.icon}
+                <Text fz="xl" fw="bold" my="md">
+                  {ex.title}
+                </Text>
+                <Text> {ex.description}</Text>
+              </Card>
+            </ScrollAnimation>
           ))}
         </SimpleGrid>
       </Container>

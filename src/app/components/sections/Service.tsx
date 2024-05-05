@@ -1,5 +1,8 @@
+'use client';
+
 import React, { JSX } from 'react';
 import { Container, Text, Box, SimpleGrid, Card } from '@mantine/core';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 type listT = {
   title: string;
@@ -137,43 +140,58 @@ const ServiceSection = () => {
 
   return (
     <>
-      <Container size="xl" id="services">
-        <Text
-          fz={{ base: 'xl3', md: 'd2' }}
-          lh={{ base: 'xl3', md: 'd3' }}
-          my="lg"
-          tt="uppercase"
-        >
-          Our Services
-        </Text>
+      <ScrollAnimation
+        animateIn="rotateInDownLeft"
+        animateOut="fadeOut"
+        animatePreScroll
+        animateOnce={true}
+      >
+        <Container size="xl" id="services">
+          <Text
+            fz={{ base: 'xl3', md: 'd2' }}
+            lh={{ base: 'xl3', md: 'd3' }}
+            my="lg"
+            tt="uppercase"
+          >
+            Our Services
+          </Text>
 
-        <Text my="lg" span>
-          {' '}
-          Explore our flexible IT outsourcing services, which can be chosen
-          individually or combined to suit various business needs. With{' '}
-          <Text fw="bold" span>
+          <Text my="lg" span>
             {' '}
-            ABSS Tech{' '}
-          </Text>{' '}
-          , you get clear advice on the best way to work together, proactive
-          support as you get started and beyond, and a quick setup for smooth
-          operations.
-        </Text>
-      </Container>
+            Explore our flexible IT outsourcing services, which can be chosen
+            individually or combined to suit various business needs. With{' '}
+            <Text fw="bold" span>
+              {' '}
+              ABSS Tech{' '}
+            </Text>{' '}
+            , you get clear advice on the best way to work together, proactive
+            support as you get started and beyond, and a quick setup for smooth
+            operations.
+          </Text>
+        </Container>
+      </ScrollAnimation>
 
       <Container pt="6rem">
         <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={'md'}>
           {list.map((item) => (
-            <Card key={item.title} my="md" shadow="#ccc 5px 5px 10px">
-              <Box my="md">{item.svg}</Box>
+            <ScrollAnimation
+              key={item.title}
+              animateIn="rotateInUpRight"
+              animateOut="fadeOut"
+              animatePreScroll
+              animateOnce={true}
+            >
+              <Card key={item.title} my="md" shadow="#ccc 5px 5px 10px">
+                <Box my="md">{item.svg}</Box>
 
-              <Text fw="bold" fz="xl" my="lg">
-                {' '}
-                {item.title}{' '}
-              </Text>
+                <Text fw="bold" fz="xl" my="lg">
+                  {' '}
+                  {item.title}{' '}
+                </Text>
 
-              <Text> {item.description} </Text>
-            </Card>
+                <Text> {item.description} </Text>
+              </Card>
+            </ScrollAnimation>
           ))}
         </SimpleGrid>
       </Container>

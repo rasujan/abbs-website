@@ -1,5 +1,8 @@
+'use client';
+
 import * as React from 'react';
 import { Box, Card, Center, Container, SimpleGrid, Text } from '@mantine/core';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Industries = () => {
   const industries = [
@@ -36,75 +39,105 @@ const Industries = () => {
 
   return (
     <Box className="industries-bg">
-      <Container id="industries" size="xl">
-        <Text
-          fz={{ base: 'xl3', md: 'd2' }}
-          lh={{ base: 'xl3', md: 'd3' }}
-          mb="lg"
-          pt="6rem"
-          tt="uppercase"
-        >
-          Industries and Expertise
-        </Text>
+      <ScrollAnimation
+        animateIn="rotateInDownLeft"
+        animateOut="fadeOut"
+        animatePreScroll
+        animateOnce={true}
+      >
+        <Container id="industries" size="xl">
+          <Text
+            fz={{ base: 'xl3', md: 'd2' }}
+            lh={{ base: 'xl3', md: 'd3' }}
+            mb="lg"
+            pt="6rem"
+            tt="uppercase"
+          >
+            Industries and Expertise
+          </Text>
 
-        <Text>
-          At A.B.S.S Tech, we offer transparent guidance to help you discover
-          the most effective collaboration strategy. From proactive support
-          during onboarding to seamless operational ramp-up, our team ensures a
-          swift and successful journey every step of the way.
-        </Text>
-      </Container>
+          <Text>
+            At A.B.S.S Tech, we offer transparent guidance to help you discover
+            the most effective collaboration strategy. From proactive support
+            during onboarding to seamless operational ramp-up, our team ensures
+            a swift and successful journey every step of the way.
+          </Text>
+        </Container>
+      </ScrollAnimation>
 
       <Container my="4rem">
         <Center>
           <SimpleGrid cols={{ base: 1 }} spacing={'md'}>
             {industries.map((ex) => (
-              <Card
+              <ScrollAnimation
                 key={ex}
-                withBorder
-                radius={'4rem'}
-                p="md"
-                px="lg"
-                className="h-focus"
+                animateIn="rotateInUpRight"
+                animateOut="fadeOut"
+                animatePreScroll
+                animateOnce={true}
               >
-                <Text fz="xl2" tt="uppercase">
-                  {ex}
-                </Text>
-              </Card>
+                <Card
+                  key={ex}
+                  withBorder
+                  radius={'4rem'}
+                  p="md"
+                  px="lg"
+                  className="h-focus"
+                >
+                  <Text fz="xl2" tt="uppercase">
+                    {ex}
+                  </Text>
+                </Card>
+              </ScrollAnimation>
             ))}
           </SimpleGrid>
         </Center>
       </Container>
 
       <Box mih="70vh">
-        <Container size="xl" pt="6rem">
-          <Text
-            fz="xl3"
-            lh="3rem"
-            tt="uppercase"
-            lts={'4px'}
-            my="xl"
-            fw="bolder"
-          >
-            AS A <span className="focus">TOP-RANKED AND TRUSTED</span> SOFTWARE
-            DEVELOPMENT COMPANY, WE RUN A POOL OF PROFICIENT IT EXPERTS AND USE
-            THE BEST AVAILABLE TOOLS AND TECHNIQUES TO ENGINEER ADVANCED
-            SOFTWARE FOR OUR CUSTOMERS.
-          </Text>
-        </Container>
+        <ScrollAnimation
+          animateIn="fadeInUp"
+          animateOut="fadeOut"
+          animatePreScroll
+          animateOnce={true}
+        >
+          <Container size="xl" pt="6rem">
+            <Text
+              fz="xl3"
+              lh="3rem"
+              tt="uppercase"
+              lts={'4px'}
+              my="xl"
+              fw="bolder"
+            >
+              AS A <span className="focus">TOP-RANKED AND TRUSTED</span>{' '}
+              SOFTWARE DEVELOPMENT COMPANY, WE RUN A POOL OF PROFICIENT IT
+              EXPERTS AND USE THE BEST AVAILABLE TOOLS AND TECHNIQUES TO
+              ENGINEER ADVANCED SOFTWARE FOR OUR CUSTOMERS.
+            </Text>
+          </Container>
+        </ScrollAnimation>
 
         <Container py="md">
           <Box>
             <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={'md'}>
               {list.map((item) => (
-                <Box key={item.title} my="md">
-                  <Text fw="bold" fz="xl" my="lg" tt="uppercase">
-                    {' '}
-                    {item.title}{' '}
-                  </Text>
+                <ScrollAnimation
+                  key={item.title}
+                  animateIn="heartBeat"
+                  animateOut="fadeOut"
+                  animatePreScroll
+                  animateOnce={true}
+                >
+                  <Box my="md">
+                    <Text fw="bold" fz="xl" my="lg" tt="uppercase">
+                      {' '}
+                      {item.title}{' '}
+                    </Text>
 
-                  <Text> {item.description} </Text>
-                </Box>
+                    <Text> {item.description} </Text>
+                  </Box>
+                </ScrollAnimation>
               ))}
             </SimpleGrid>
           </Box>
