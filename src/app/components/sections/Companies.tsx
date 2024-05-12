@@ -1,6 +1,6 @@
 'use client';
 
-import { Container, Text, Image, SimpleGrid, Flex } from '@mantine/core';
+import { Container, Text, Image, SimpleGrid } from '@mantine/core';
 import React from 'react';
 import NextImage from 'next/image';
 

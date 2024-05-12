@@ -14,7 +14,9 @@ import 'animate.css/animate.compat.css';
 
 export const metadata = {
   title: 'ABBS',
-  description: 'ABBS, Creating Software Success Together, Strengthening Bonds'
+  description: 'ABBS, Creating Software Success Together, Strengthening Bonds',
+  author: 'Sujan Maharjan (Rasujan)',
+  email: 'sujan.maharjan555@gmail.com'
 };
 
 export default function RootLayout({
