@@ -7,7 +7,7 @@ import { Box, Container, Grid, Image, Text } from '@mantine/core';
 import { IconMail, IconLocation, IconPhoneCall } from '@tabler/icons-react';
 
 import classes from './Footer.module.scss';
-import abbs from '@/../public/abbs.jpeg';
+import abbs from '@/../public/ABBS.png';
 
 const Footer = () => {
   return (
