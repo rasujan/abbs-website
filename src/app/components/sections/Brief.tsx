@@ -22,19 +22,19 @@ const Brief = () => {
       title: 'Understand',
       icon: <IconCircle1Filled size={'4rem'} />,
       description:
-        'Understand your business strategy, IT environment, and budget. Lorem ipsum dolor sit amet consectetur. Ut ornare fusce sit pharetra eget vitae massa.'
+        'Clear communication and a strong focus on customer experience ensure the client feels valued and supported.'
     },
     {
       title: 'Implement',
       icon: <IconCircle2Filled size={'4rem'} />,
       description:
-        'Implement strategic IT solutions tailored to your business. Tristique tortor turpis semper dolor blandit vulputate nulla pretium.'
+        'Detailed planning process, where the company collaborates closely with the client to design and tailor solutions that precisely meet their requirements.'
     },
     {
       title: 'Empower',
       icon: <IconCircle3Filled size={'4rem'} />,
       description:
-        'Empower your team with the right tools, agile support, and continuous IT planning. Tristique tortor turpis semper dolor blandit vulputate nulla pretium.'
+        'Offering solutions that are not only effective but also user-friendly and scalable, allowing clients to grow and adapt as needed. By providing training, resources, and ongoing support, the company helps clients build their own capabilities and confidence in using technology.'
     }
   ];
 
