@@ -10,15 +10,15 @@ const Industries = () => {
     'HR Software',
     'Media & Entertainment',
     'E-commerce Sites',
-    'IT Professionals Outsourcing',
-    'Sales Team Outsourcing'
+    'IT Professional Allocation',
+    'Business Development Team Allocation'
   ];
 
   const list = [
     {
       title: 'MULTI-INDUSTRY TRACK RECORD',
       description:
-        'Our portfolio of delivered IT projects includes over 1,000 successful tech initiatives in the most demanding and data-driven sectors.'
+        'Our portfolio of delivered IT projects includes many successful tech initiatives in the most demanding and data-driven sectors.'
     },
     {
       title: 'WORLDWIDE REACH',
@@ -28,7 +28,7 @@ const Industries = () => {
     {
       title: 'EXTENSIVE IT TALENT POOL',
       description:
-        'In our company employs over 3,500 tech experts – including developers, architects, data scientists, DevOps engineers etc. – who are ready to deliver IT projects of any scope and complexity.'
+        'In our company employs many tech experts – including developers, architects, data scientists, DevOps engineers etc. – who are ready to deliver IT projects of any scope and complexity.'
     },
     {
       title: 'HIGH CUSTOMER SATISFACTION RATES',

@@ -31,7 +31,7 @@ const Stories = () => {
               </Text>
 
               <Text fz="d3" lh={'4rem'} mt="8rem">
-                Driving Innovation through Collaborative Outsourcing{' '}
+                Driving Innovation through Strategic Tech Collaborations{' '}
               </Text>
             </Grid.Col>
 
