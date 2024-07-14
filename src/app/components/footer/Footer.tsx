@@ -4,10 +4,16 @@ import NextImage from 'next/image';
 
 import { Box, Container, Grid, Image, Text } from '@mantine/core';
 
-import { IconMail, IconLocation, IconPhoneCall } from '@tabler/icons-react';
+import {
+  IconMail,
+  IconLocation,
+  IconPhoneCall,
+  IconBrandLinkedin
+} from '@tabler/icons-react';
 
 import classes from './Footer.module.scss';
 import abbs from '@/../public/ABBS.png';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -37,12 +43,21 @@ const Footer = () => {
             </Text>
             <Text fz="xl">
               {' '}
-              <IconMail /> info@techabss.com{' '}
+              <IconMail /> abhay@techabss.com{' '}
             </Text>
             <Text fz="xl">
               {' '}
-              <IconPhoneCall /> +977 9851240913{' '}
+              <IconPhoneCall /> +977 9869018982{' '}
             </Text>
+            <Link
+              href="https://www.linkedin.com/company/abss-tech/"
+              target="_blank"
+            >
+              <Text fz="xl">
+                {' '}
+                <IconBrandLinkedin /> LinkedIn
+              </Text>
+            </Link>
             <Text fz="xl">
               {' '}
               <IconLocation /> Durbarmarg,Kathmandu{' '}

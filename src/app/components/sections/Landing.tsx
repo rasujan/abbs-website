@@ -98,8 +98,8 @@ const Landing = () => (
               <Text my="md" fz="xl">
                 Embark on a dynamic software development journey with our
                 versatile collaboration options. Choose from a curated range of
-                outsourcing models, finely tuned to meet your immediate needs
-                and ready to effortlessly scale as your business flourishes.
+                models, finely tuned to meet your immediate needs and ready to
+                effortlessly scale as your business flourishes.
               </Text>
 
               <Text mb="md" fz="xl">
