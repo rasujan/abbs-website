@@ -158,8 +158,8 @@ const ServiceSection = () => {
 
           <Text my="lg" span>
             {' '}
-            Explore our flexible IT outsourcing services, which can be chosen
-            individually or combined to suit various business needs. With{' '}
+            Explore our flexible IT services, which can be chosen individually
+            or combined to suit various business needs. With{' '}
             <Text fw="bold" span>
               {' '}
               ABSS Tech{' '}
